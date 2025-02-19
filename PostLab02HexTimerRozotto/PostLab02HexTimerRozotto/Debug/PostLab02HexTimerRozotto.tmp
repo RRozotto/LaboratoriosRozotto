@@ -1,0 +1,40 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>c:\users\rodri\Documents\Atmel Studio\7.0\PostLab02HexTimerRozotto\PostLab02HexTimerRozotto\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>c:\users\rodri\Documents\Atmel Studio\7.0\PostLab02HexTimerRozotto\PostLab02HexTimerRozotto\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc</FILE>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\M328PDEF.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>c:\users\rodri\Documents\Atmel Studio\7.0\PostLab02HexTimerRozotto\PostLab02HexTimerRozotto\Debug\PostLab02HexTimerRozotto.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>PostLab02HexTimerRozotto.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>PostLab02HexTimerRozotto.map</FILE>
+  <FILE>PostLab02HexTimerRozotto.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <SETUP><FILE>c:\users\rodri\Documents\Atmel Studio\7.0\PostLab02HexTimerRozotto\PostLab02HexTimerRozotto\main.asm</FILE><LINE>21</LINE></SETUP>
+  <MYDATA><FILE>c:\users\rodri\Documents\Atmel Studio\7.0\PostLab02HexTimerRozotto\PostLab02HexTimerRozotto\main.asm</FILE><LINE>58</LINE></MYDATA>
+  <CARGAR_DATOS><FILE>c:\users\rodri\Documents\Atmel Studio\7.0\PostLab02HexTimerRozotto\PostLab02HexTimerRozotto\main.asm</FILE><LINE>50</LINE></CARGAR_DATOS>
+  <DONE><FILE>c:\users\rodri\Documents\Atmel Studio\7.0\PostLab02HexTimerRozotto\PostLab02HexTimerRozotto\main.asm</FILE><LINE>56</LINE></DONE>
+  <LOOP><FILE>c:\users\rodri\Documents\Atmel Studio\7.0\PostLab02HexTimerRozotto\PostLab02HexTimerRozotto\main.asm</FILE><LINE>63</LINE></LOOP>
+  <Continuar><FILE>c:\users\rodri\Documents\Atmel Studio\7.0\PostLab02HexTimerRozotto\PostLab02HexTimerRozotto\main.asm</FILE><LINE>79</LINE></Continuar>
+  <DELAY><FILE>c:\users\rodri\Documents\Atmel Studio\7.0\PostLab02HexTimerRozotto\PostLab02HexTimerRozotto\main.asm</FILE><LINE>117</LINE></DELAY>
+  <AlarmaReset><FILE>c:\users\rodri\Documents\Atmel Studio\7.0\PostLab02HexTimerRozotto\PostLab02HexTimerRozotto\main.asm</FILE><LINE>111</LINE></AlarmaReset>
+  <Continuar1><FILE>c:\users\rodri\Documents\Atmel Studio\7.0\PostLab02HexTimerRozotto\PostLab02HexTimerRozotto\main.asm</FILE><LINE>82</LINE></Continuar1>
+  <Continuar2><FILE>c:\users\rodri\Documents\Atmel Studio\7.0\PostLab02HexTimerRozotto\PostLab02HexTimerRozotto\main.asm</FILE><LINE>99</LINE></Continuar2>
+  <SUBDELAY1><FILE>c:\users\rodri\Documents\Atmel Studio\7.0\PostLab02HexTimerRozotto\PostLab02HexTimerRozotto\main.asm</FILE><LINE>119</LINE></SUBDELAY1>
+  <SUBDELAY2><FILE>c:\users\rodri\Documents\Atmel Studio\7.0\PostLab02HexTimerRozotto\PostLab02HexTimerRozotto\main.asm</FILE><LINE>124</LINE></SUBDELAY2>
+  <SUBDELAY3><FILE>c:\users\rodri\Documents\Atmel Studio\7.0\PostLab02HexTimerRozotto\PostLab02HexTimerRozotto\main.asm</FILE><LINE>129</LINE></SUBDELAY3>
+ </LABELS>
+</ASSEMBLER_INFO>
