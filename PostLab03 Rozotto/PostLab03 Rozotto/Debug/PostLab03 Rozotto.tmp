@@ -1,0 +1,44 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>c:\users\rodri\Documents\Atmel Studio\7.0\PostLab03 Rozotto\PostLab03 Rozotto\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>c:\users\rodri\Documents\Atmel Studio\7.0\PostLab03 Rozotto\PostLab03 Rozotto\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc</FILE>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\M328PDEF.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>c:\users\rodri\Documents\Atmel Studio\7.0\PostLab03 Rozotto\PostLab03 Rozotto\Debug\PostLab03 Rozotto.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>PostLab03 Rozotto.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>PostLab03 Rozotto.map</FILE>
+  <FILE>PostLab03 Rozotto.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <INICIO><FILE>c:\users\rodri\Documents\Atmel Studio\7.0\PostLab03 Rozotto\PostLab03 Rozotto\main.asm</FILE><LINE>25</LINE></INICIO>
+  <IntBotones><FILE>c:\users\rodri\Documents\Atmel Studio\7.0\PostLab03 Rozotto\PostLab03 Rozotto\main.asm</FILE><LINE>152</LINE></IntBotones>
+  <TMR0_ISR><FILE>c:\users\rodri\Documents\Atmel Studio\7.0\PostLab03 Rozotto\PostLab03 Rozotto\main.asm</FILE><LINE>125</LINE></TMR0_ISR>
+  <CONFIG><FILE>c:\users\rodri\Documents\Atmel Studio\7.0\PostLab03 Rozotto\PostLab03 Rozotto\main.asm</FILE><LINE>32</LINE></CONFIG>
+  <MYDATA><FILE>c:\users\rodri\Documents\Atmel Studio\7.0\PostLab03 Rozotto\PostLab03 Rozotto\main.asm</FILE><LINE>84</LINE></MYDATA>
+  <CARGAR_DATOS><FILE>c:\users\rodri\Documents\Atmel Studio\7.0\PostLab03 Rozotto\PostLab03 Rozotto\main.asm</FILE><LINE>74</LINE></CARGAR_DATOS>
+  <DONE><FILE>c:\users\rodri\Documents\Atmel Studio\7.0\PostLab03 Rozotto\PostLab03 Rozotto\main.asm</FILE><LINE>80</LINE></DONE>
+  <LOOP><FILE>c:\users\rodri\Documents\Atmel Studio\7.0\PostLab03 Rozotto\PostLab03 Rozotto\main.asm</FILE><LINE>93</LINE></LOOP>
+  <DELAY><FILE>c:\users\rodri\Documents\Atmel Studio\7.0\PostLab03 Rozotto\PostLab03 Rozotto\main.asm</FILE><LINE>173</LINE></DELAY>
+  <Continuar2><FILE>c:\users\rodri\Documents\Atmel Studio\7.0\PostLab03 Rozotto\PostLab03 Rozotto\main.asm</FILE><LINE>137</LINE></Continuar2>
+  <Overflow1><FILE>c:\users\rodri\Documents\Atmel Studio\7.0\PostLab03 Rozotto\PostLab03 Rozotto\main.asm</FILE><LINE>140</LINE></Overflow1>
+  <Overflow2><FILE>c:\users\rodri\Documents\Atmel Studio\7.0\PostLab03 Rozotto\PostLab03 Rozotto\main.asm</FILE><LINE>147</LINE></Overflow2>
+  <DecContador><FILE>c:\users\rodri\Documents\Atmel Studio\7.0\PostLab03 Rozotto\PostLab03 Rozotto\main.asm</FILE><LINE>162</LINE></DecContador>
+  <Finalizar><FILE>c:\users\rodri\Documents\Atmel Studio\7.0\PostLab03 Rozotto\PostLab03 Rozotto\main.asm</FILE><LINE>168</LINE></Finalizar>
+  <SUBDELAY1><FILE>c:\users\rodri\Documents\Atmel Studio\7.0\PostLab03 Rozotto\PostLab03 Rozotto\main.asm</FILE><LINE>175</LINE></SUBDELAY1>
+  <SUBDELAY2><FILE>c:\users\rodri\Documents\Atmel Studio\7.0\PostLab03 Rozotto\PostLab03 Rozotto\main.asm</FILE><LINE>180</LINE></SUBDELAY2>
+  <SUBDELAY3><FILE>c:\users\rodri\Documents\Atmel Studio\7.0\PostLab03 Rozotto\PostLab03 Rozotto\main.asm</FILE><LINE>185</LINE></SUBDELAY3>
+ </LABELS>
+</ASSEMBLER_INFO>
