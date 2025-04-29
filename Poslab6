@@ -1,0 +1,117 @@
+/*
+ * Poslab6.c
+ *
+ * Created: 4/29/2025 2:57:51 PM
+ * Author : rodri
+ */ 
+
+#define F_CPU 16000000UL
+#include <avr/io.h>
+#include <util/delay.h>
+#include <stdlib.h>
+#include <avr/interrupt.h>
+
+// Declaración de funciones
+void Setup();
+void configurarUART();
+void enviarCaracter(char c);
+void enviarTexto(char* texto);
+void mostrarEnLeds(uint8_t valor);
+uint16_t leerPotenciometro();
+void imprimirMenu();
+
+// Variable global
+volatile uint8_t datoPot = 0;
+
+int main(void)
+{
+	Setup();
+	imprimirMenu();
+	char seleccion;
+
+	while (1)
+	{
+		while (!(UCSR0A & (1 << RXC0))); // Esperar dato por UART
+		seleccion = UDR0;
+
+		if (seleccion == '2') {
+			// Visualiza el último valor en LEDs
+			mostrarEnLeds(datoPot);
+			enviarTexto("LEDs actualizados.\r\n");
+			imprimirMenu();
+		}
+		else if (seleccion == '1') {
+			// Obtiene el valor del potenciómetro
+			uint16_t valorADC = leerPotenciometro();
+			datoPot = valorADC >> 2; // Convertir 10-bit a 8-bit
+
+			enviarTexto("Lectura del potenciómetro: ");
+			char buffer[10];
+			itoa(datoPot, buffer, 10);
+			enviarTexto(buffer);
+			enviarTexto("\r\n");
+			imprimirMenu();
+		}
+		else {
+			// Opción inválida (puedes agregar mensaje si deseas)
+		}
+		_delay_ms(500);
+	}
+}
+
+void Setup(){
+	cli(); // Desactivar interrupciones globales
+
+	configurarUART();
+
+	// Configuración de pines de salida para LEDs
+	DDRD |= 0b11111100;
+	DDRB |= 0b00000011;
+
+	// Configurar ADC: referencia AVcc, canal 0, prescaler 128
+	ADMUX = (1 << REFS0);
+	ADCSRA = (1 << ADEN) | (1 << ADPS2) | (1 << ADPS1) | (1 << ADPS0);
+
+	sei(); // Activar interrupciones globales
+}
+
+void configurarUART(){
+	DDRD |= (1 << DDD1); // TX como salida
+	DDRD &= ~(1 << DDD0); // RX como entrada
+
+	UCSR0A = 0;
+	UCSR0B = (1 << RXEN0) | (1 << TXEN0); // Habilitar RX y TX
+	UCSR0C = (1 << UCSZ01) | (1 << UCSZ00); // 8 bits, sin paridad
+	UBRR0 = 103; // 9600 baudios
+}
+
+void enviarCaracter(char c){
+	while (!(UCSR0A & (1 << UDRE0)));
+	UDR0 = c;
+}
+
+void enviarTexto(char* texto){
+	for (uint8_t i = 0; texto[i] != '\0'; i++){
+		enviarCaracter(texto[i]);
+	}
+}
+
+void mostrarEnLeds(uint8_t valor) {
+	// Enviar parte baja a PORTB y parte alta a PORTD
+	PORTB = (PORTB & 0b11111100) | (valor & 0b00000011);
+	PORTD = (PORTD & 0b00000011) | (valor & 0b11111100);
+}
+
+uint16_t leerPotenciometro() {
+	ADMUX = (ADMUX & 0xF0) | 0; // Usar canal ADC0
+	ADCSRA |= (1 << ADSC); // Iniciar conversión
+	while (ADCSRA & (1 << ADSC)); // Esperar fin de conversión
+	return ADC;
+}
+
+void imprimirMenu() {
+	enviarTexto("\r\n==== Control de LEDs y Potenciometro ====\r\n");
+	enviarTexto("1) Medir valor actual del potenciómetro\r\n");
+	enviarTexto("2) Actualizar LEDs con el valor leído\r\n");
+	enviarTexto("Ingrese una opción: ");
+}
